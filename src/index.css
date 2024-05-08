@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Satoshi';
+    src: local('Satoshi'), url(../Fonts/Satoshi-Regular.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-horizontal-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-horizontal-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

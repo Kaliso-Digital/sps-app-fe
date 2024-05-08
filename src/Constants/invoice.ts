@@ -1,0 +1,3 @@
+export const INVOICE_STATUS_PENDING = 1;
+export const INVOICE_STATUS_ACCEPTED = 2;
+export const INVOICE_STATUS_REJECTED = 3;
