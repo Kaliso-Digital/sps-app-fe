@@ -1,4 +1,4 @@
-export const BASEURL = "https://api.spsfulfillment.it/api/";
+export const BASEURL = "https://api.spsfulfillment.com/api/";
 //export const BASEURL = "http://localhost:5000/api/";
 export const USERURL = "user"
 export const INQUIRYURL = "inquiry"
