@@ -10,6 +10,8 @@ import PrimaryButtonOutlined from "../Components/PrimaryButtonOutlined";
 import HollowButton from "../Components/HollowButton";
 import { TYPE_COMPANY, TYPE_PRIVATE } from "../Constants/api";
 import { makeRequest } from "../Service/api";
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 const mockSignInWithGoogle = async (): Promise<void> => {
   // Mocking a simple authentication process with Google (replace this with your actual Google authentication logic)
@@ -63,7 +65,7 @@ const Register = () => {
   const countries = Country.getAllCountries();
   const states = formData.country ? State.getStatesOfCountry(formData.country) : [];
   const cities = formData.province ? City.getCitiesOfState(formData.country, formData.province) : [];
-  const backgroundImageUrl = 'url("../Assets/onboarding/SignUpBackground.jpeg")';
+  const backgroundImageUrl = 'url("/Assets/onboarding/SignUpBackground.jpg")';
 
   const handleSignInWithGoogle = async () => {
     try {
@@ -316,25 +318,7 @@ const Register = () => {
                     className="absolute inset-y-0 right-0 pr-3 flex items-center"
                     onClick={() => setPasswordVisible(!passwordVisible)}
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke={passwordVisible ? "blue" : "currentColor"}
-                      className="w-4 h-4 transition-colors duration-300 ease-in-out"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
+                    {passwordVisible ? <VisibilityOffIcon /> : <VisibilityIcon />}
                   </button>
                 </div>
                 {passwordError && (
@@ -375,25 +359,7 @@ const Register = () => {
                       setConfirmPasswordVisible(!confirmPasswordVisible)
                     }
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke={confirmPasswordVisible ? "blue" : "currentColor"}
-                      className="w-4 h-4 transition-colors duration-300 ease-in-out"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
+                    {confirmPasswordVisible ? <VisibilityOffIcon /> : <VisibilityIcon />}
                   </button>
                 </div>
                 {passwordMatchError && (
@@ -714,7 +680,7 @@ const Register = () => {
                     required
                   />
                   <label className="text-sm font-normal" htmlFor="acceptTerms">
-                  Accept <a href="https://spsfulfillment.com/privacy">Privacy Policy</a> and <a href="https://spsfulfillment.com/terms">Terms and Conditions</a>*
+                  Accept <a href="https://spsfulfillment.com/privacy" className="text-[#0D8FFD] hover:underline">Privacy Policy</a> and <a href="https://spsfulfillment.com/terms" className="text-[#0D8FFD] hover:underline">Terms and Conditions</a>*
                   </label>
                 </div>
               </div>
