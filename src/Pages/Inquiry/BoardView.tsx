@@ -34,9 +34,9 @@ const BoardView: React.FC<BoardViewProps> = ({ data, onViewInquiry }) => {
     return (
       <div className="px-4 pb-4 h-full overflow-scroll no-horizontal-scrollbar">
         {(Object.entries(groupedData).length > 0) ? (
-          <div className="flex flex-row">
+          <div className="flex">
             {Object.entries(groupedData).map(([status, inquiries]) => (
-              <div key={status} className="board-group mr-4 w-64 flex-shrink-0">
+              <div key={status} className="board-group mr-4 ">
                 <div className="sticky top-0 bg-white p-2 ">
                   <div className="board-group-header capitalize text-base font-bold">
                     {status} ({inquiries.length})

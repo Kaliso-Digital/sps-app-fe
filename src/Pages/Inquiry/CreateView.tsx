@@ -12,7 +12,7 @@ import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
 import Inquiry from "../../Interface/Inquiry";
 import { shippingTypeData, serviceData } from "../../DropDownData/DropDownData";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import PrimaryButton from "../../Components/PrimaryButton";
 import { useReferenceData } from "../../Service/ReferenceDataContext";
 import { makeRequest } from "../../Service/api";
@@ -472,9 +472,7 @@ const CreateInquiryView = () => {
         }}
       >
         <div className="inquiry-table-header flex flex-row justify-Center items-center w-full p-3 pb-6 gap-4 ">
-          <Link to="/inquiries" className="text-[#0D8FFD]">
-            <ArrowBackIcon />
-          </Link>
+          <ArrowBackIcon className="text-[#0D8FFD]" onClick={handleGoBack} />
           <div className="heading font-bold text-2xl">Create Inquiry</div>
         </div>
         <div
@@ -619,7 +617,7 @@ const CreateInquiryView = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full items-start px-5 py-5">
+          <div className="flex flex-col w-full items-start px-5">
             <FormControl>
               <FormLabel
                 id="demo-radio-buttons-group-label"

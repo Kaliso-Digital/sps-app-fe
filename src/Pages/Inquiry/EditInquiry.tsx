@@ -768,6 +768,7 @@ const EditInquiry: React.FC = () => {
               </Link>
               <div className="heading font-bold text-2xl">{inquiry?.name}</div>
             </div>
+            <hr />
             <div className="inquiry-form w-full flex flex-col h-full overflow-y-auto">
               <div className="flex flex-row w-full">
                 <div className="flex flex-col justify-between w-1/2 p-5">
