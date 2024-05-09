@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className="w-full items-center justify-center flex h-[10vh] shadow-sm">
       <div className="header h-full flex flex-row justify-between py-4 w-5/6 items-center">
-        <div className="logo w-[18%] flex justify-center items-center">
+        <div className="logo w-[22%] flex justify-center items-center">
           <Link to={`/inquiries`}>
             <img src="/Assets/spsLogo.jpg" alt=""/>
           </Link>

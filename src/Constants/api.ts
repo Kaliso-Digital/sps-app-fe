@@ -1,4 +1,4 @@
-export const BASEURL = "https://api.spsfulfillment.it/api/";
+export const BASEURL = "https://aa34-13-51-174-148.ngrok-free.app/api/";
 //export const BASEURL = "http://localhost:5000/api/";
 export const USERURL = "user"
 export const INQUIRYURL = "inquiry"

@@ -274,7 +274,7 @@ export const QuoteFormStepTwo: React.FC<Popup> = ({ data, onClose, handleNext, h
             </div>
 
             <div className="flex flex-col w-full pb-4">
-              <span className="text-sm font-bold pb-1">Lead Time <small>*</small></span>
+              <span className="text-sm font-bold pb-1">Lead Time</span>
               <div className="flex flex-row gap-4 items-center">
                 <input
                   type="text"
@@ -283,7 +283,6 @@ export const QuoteFormStepTwo: React.FC<Popup> = ({ data, onClose, handleNext, h
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className="w-full p-3 border rounded text-gray-400 text-sm font-medium focus:ring-1 focus:ring-gray-400 focus:outline-none"
-                  required
                 />
                 <div>Days</div>
               </div>

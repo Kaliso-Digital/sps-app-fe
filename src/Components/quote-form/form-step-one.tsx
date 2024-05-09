@@ -115,8 +115,7 @@ export const QuoteFormStepOne: React.FC<Popup> = ({ onClose, handleNext }) => {
               name="productName"
               onChange={handleChange}
               onBlur={handleBlur}
-              className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none"
-              required
+              className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none "
             />
           </div>
           <div className="flex flex-col w-full pb-4">
@@ -128,14 +127,13 @@ export const QuoteFormStepOne: React.FC<Popup> = ({ onClose, handleNext }) => {
               name="productDesc"
               onChange={handleChange}
               onBlur={handleBlur}
-              className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none"
+              className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none "
               rows={3}
-              required
             />
           </div>
           <div className="flex flex-col w-full pb-4">
-            <span className="text-sm font-bold pb-1">Found Price <small>*</small></span>
-            <div className="relative mb-4">
+            <span className="text-sm font-bold pb-1">Found Price</span>
+            <div className="relative mb-6">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">USD</div>
               <input
                 type="text"
@@ -143,15 +141,13 @@ export const QuoteFormStepOne: React.FC<Popup> = ({ onClose, handleNext }) => {
                 name="foundPrice"
                 onChange={handleChange}
                 onBlur={handleBlur}
-                className="w-full ps-10 p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none"
-                required
+                className="w-full ps-10 p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none "
               />
             </div>
-            <small className="text-sm text-gray">Target Price: USD {}</small>
           </div>
           <div className="flex flex-row w-full space-x-4 pb-4">
             <div className="flex flex-col w-1/2">
-              <span className="text-sm font-bold pb-1">Length of Product <small>*</small></span>
+              <span className="text-sm font-bold pb-1">Length of Product</span>
               <div className="relative mb-6">
                 <input
                   type="text"
@@ -159,14 +155,13 @@ export const QuoteFormStepOne: React.FC<Popup> = ({ onClose, handleNext }) => {
                   name="length"
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none"
-                  required
+                  className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none "
                 />
                 <div className="absolute inset-y-0 end-2.5 flex items-center ps-3.5 pointer-events-none">cm</div>
               </div>
             </div>
             <div className="flex flex-col w-1/2">
-              <span className="text-sm font-bold pb-1">Width of Product <small>*</small></span>
+              <span className="text-sm font-bold pb-1">Width of Product</span>
               <div className="relative mb-6">
                 <input
                   type="text"
@@ -174,8 +169,7 @@ export const QuoteFormStepOne: React.FC<Popup> = ({ onClose, handleNext }) => {
                   name="width"
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none"
-                  required
+                  className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none "
                 />
                 <div className="absolute inset-y-0 end-2.5 flex items-center ps-3.5 pointer-events-none">cm</div>
               </div>
@@ -183,7 +177,7 @@ export const QuoteFormStepOne: React.FC<Popup> = ({ onClose, handleNext }) => {
           </div>
           <div className="flex flex-row w-full space-x-4 pb-4">
             <div className="flex flex-col w-1/2">
-              <span className="text-sm font-bold pb-1">Height of Product <small>*</small></span>
+              <span className="text-sm font-bold pb-1">Height of Product</span>
               <div className="relative mb-6">
                 <input
                   type="text"
@@ -191,14 +185,13 @@ export const QuoteFormStepOne: React.FC<Popup> = ({ onClose, handleNext }) => {
                   name="height"
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none"
-                  required
+                  className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none "
                 />
                 <div className="absolute inset-y-0 end-2.5 flex items-center ps-3.5 pointer-events-none">cm</div>
               </div>
             </div>
             <div className="flex flex-col w-1/2">
-              <span className="text-sm font-bold pb-1">Weight of Product <small>*</small></span>
+              <span className="text-sm font-bold pb-1">Weight of Product</span>
               <div className="relative mb-6">
                 <input
                   type="text"
@@ -206,8 +199,7 @@ export const QuoteFormStepOne: React.FC<Popup> = ({ onClose, handleNext }) => {
                   name="weight"
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none"
-                  required
+                  className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none "
                 />
                 <div className="absolute inset-y-0 end-2.5 flex items-center ps-3.5 pointer-events-none">kg</div>
               </div>
@@ -234,7 +226,7 @@ export const QuoteFormStepOne: React.FC<Popup> = ({ onClose, handleNext }) => {
             />
           </div>
           <div className="flex flex-col w-full pb-4">
-            <span className="text-sm font-bold pb-1">Response to Notes <small>*</small></span>
+            <span className="text-sm font-bold pb-1">Response to Notes</span>
             <textarea
               name="notes"
               value={values.notes}
@@ -242,7 +234,6 @@ export const QuoteFormStepOne: React.FC<Popup> = ({ onClose, handleNext }) => {
               className="w-full  p-3 border rounded text-gray-400 text-sm font-medium  focus:ring-1 focus:ring-gray-400 focus:outline-none "
               rows={3}
               onChange={handleChange}
-              required
             />
           </div>
         </div>
